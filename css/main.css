@@ -1,0 +1,99 @@
+html body {
+    margin: 0;
+    min-height: 100%;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Menu */
+.menu nav {
+    background-color: #0288D1;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.menu img {
+    vertical-align: middle;
+}
+
+.menu .goToDocs {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 8px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.menu .goToDocs:hover, .menu nav .nav-wrapper .button i:hover {
+    color: #fff;
+    background-color: initial;
+    transition: color 0.15s ease;
+    transition: background-color;
+}
+
+.menu nav .nav-wrapper .button i {
+    font-weight: normal;
+    line-height: 24px;
+    height: 40px;
+    padding: 8px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.menu nav, .menu nav .nav-wrapper i, .menu nav a.button-collapse, .menu nav a.button-collapse i {
+    height: 48px;
+    line-height: 48px;
+}
+
+
+.menu .logo-image {
+    width: 28px;
+    height: 28px;
+    margin-left: 20px;
+}
+
+.menu .logo-type {
+    height: 18px;
+    margin-left: 12px;
+}
+
+.menu nav .nav-wrapper .profile-wrapper {
+    margin-right: 16px;
+    padding: 8px;
+    line-height: 16px;
+}
+
+.menu nav .nav-wrapper .profile{
+    width: 32px;
+    height: 32px;
+}
+
+.menu nav .nav-wrapper .profile.button img {
+    width: 32px;
+    height: 32px;
+    vertical-align: top;
+}
+
+.menu .view {
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: normal;
+    background: #03a9f4;
+    align-self: center;
+    margin-left: 16px;
+    margin-right: 8px;
+    padding: 0 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: inline-block;
+}
+
+.menu nav .nav-wrapper .view i {
+    font-size: 16px;
+    margin-right: 6px;
+    line-height: 24px;
+    height: 24px;
+}
