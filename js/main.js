@@ -1,6 +1,7 @@
 
 function left_toggle() {
     document.getElementById("side-navbar").style.width = "61px";
+    document.getElementById("content").style.marginLeft = "61px";
     document.getElementById("side-navbar").style.height = "calc(100% - 44px - 48px)";
     document.getElementById("side-navbar2").style.width = "61px";
     document.getElementById("side-navbar1").style.transform = "translateX(-100%)";
@@ -25,6 +26,7 @@ function left_toggle() {
 
 function right_toggle() {
     document.getElementById("side-navbar").style.width = "256px";
+    document.getElementById("content").style.marginLeft = "256px";
     document.getElementById("side-navbar").style.height = "calc(100% - 104px - 48px)";
     document.getElementById("side-navbar2").style.width = "256px";
     document.getElementById("side-navbar2-svg").style.transform = "rotate(0deg)";
