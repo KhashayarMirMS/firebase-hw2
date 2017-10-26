@@ -570,15 +570,29 @@ main .padding-remaining {
     }
 }
 
-@media only screen and (min-width: 664px) and (max-width: 1216) {
+@media only screen and (min-width: 664px) and (max-width: 896px) {
     .features.overview .grid {
-        width: 100%;
+        width: 664px;
+    }
+
+    .features.overview {
+        margin-left: 0;
+    }
+
+    .big.screen.only {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 896px) and (max-width: 1216px) {
+    .features.overview .grid {
+        width: 640px;
     }
 }
 
 /* Overall */
-@media only screen and (max-width: 664px) {
-    .big.screen.only {
+@media only screen and (max-width: 640px) {
+    .big.screen.only, .medium.screen.only {
         display: none;
     }
 }
