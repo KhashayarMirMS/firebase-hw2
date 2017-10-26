@@ -1,10 +1,16 @@
 html body {
     margin: 0;
     min-height: 100%;
+    height: 100%;
+    background-color: #cfd8dc;
     /*font-family: Roboto, "Helvetica Neue", sans-serif;*/
 }
 
 /* Menu */
+.navbar-fixed {
+    height: 48px !important;
+}
+
 .menu nav {
     background-color: #0288D1;
 }
@@ -327,7 +333,7 @@ nav.navbar .collapsed {
     height:calc(100% - 153px);
     width: 256px;
     z-index: -1;
-    margin-top: 49.2px;
+    margin-top: 48px;
     line-height: 24px;
     padding: 0px;
 }
@@ -414,3 +420,165 @@ main .padding-remaining {
 }
 
 
+/* Features Overview */
+.features.overview {
+    background-color: #cfd8dc;
+    padding-bottom: 48px!important;
+    padding-top: 48px!important;
+    color: rgba(0,0,0,0.87);
+    margin-left: 256px;
+}
+
+.features.overview .grid {
+    width: 960px;
+    margin: auto;
+}
+
+#title, .card {
+    margin: 0 12px 24px 12px !important;
+}
+
+#title {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0,0,0,0.54);
+}
+
+.features.overview .projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.projects .card {
+    width: 296px;
+    background-color: #FFF;
+    min-height: 296px;
+    color: rgba(0,0,0,0.87);
+    box-sizing: border-box;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2), 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12);
+}
+
+.projects .card .banner.image {
+    flex: 0 0 auto;
+}
+
+.projects .card .banner.image img {
+    width: 100%;
+}
+
+.projects .card .content {
+    min-height: 120px;
+    padding: 16px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.projects .card .content .title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.projects .card .content .description {
+    color: rgba(0,0,0,0.54);
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.projects .card .links {
+    padding: 4px 4px 4px 16px;
+    min-height: 44px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.projects .card .links .learn.more {
+    color: #039be5;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+
+.projects .card .links .get.started {
+    color: rgb(3,155,229);
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 2px;
+    flex: 0 0 auto;
+    margin: 0 0 0 8px;
+    letter-spacing: .01em;
+    box-sizing: border-box;
+    
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    min-height: 36px;
+    min-width: 88px;
+    line-height: 36px;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -webkit-user-select: none;
+    outline: none;
+    border: 0;
+    background: transparent;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    font-style: inherit;
+    font-variant: inherit;
+    font-family: inherit;
+    text-decoration: none;
+    overflow: hidden;
+    -webkit-transition: box-shadow .4s cubic-bezier(0.25,0.8,0.25,1),background-color .4s cubic-bezier(0.25,0.8,0.25,1);
+    -webkit-transition: box-shadow .4s cubic-bezier(0.25,0.8,0.25,1),background-color .4s cubic-bezier(0.25,0.8,0.25,1);
+    transition: box-shadow .4s cubic-bezier(0.25,0.8,0.25,1),background-color .4s cubic-bezier(0.25,0.8,0.25,1);
+}
+
+.projects .card .links .get.started:hover {
+    background-color: rgba(3,155,229,0.122);
+}
+
+@media only screen and (max-width: 664px) {
+    .features.overview {
+        margin-left: 0;
+    }
+
+    .features.overview .grid {
+        width: 100%;
+    }
+
+    .projects .card {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 664px) and (max-width: 1216) {
+    .features.overview .grid {
+        width: 100%;
+    }
+}
+
+/* Overall */
+@media only screen and (max-width: 664px) {
+    .big.screen.only {
+        display: none;
+    }
+}
