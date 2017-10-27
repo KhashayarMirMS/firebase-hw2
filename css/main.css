@@ -562,7 +562,7 @@ main .padding-remaining {
 
 @media only screen and (max-width: 664px) {
     .features.overview {
-        margin-left: 0;
+        margin-left: 0 !important;
     }
 
     .features.overview .grid {
@@ -580,7 +580,7 @@ main .padding-remaining {
     }
 
     .features.overview {
-        margin-left: 0;
+        margin-left: 0 !important;
     }
 
     .big.screen.only {
