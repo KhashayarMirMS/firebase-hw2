@@ -438,11 +438,11 @@ main .padding-remaining {
     margin: auto;
 }
 
-#title, .card {
+.grid > .title, .card {
     margin: 0 12px 24px 12px !important;
 }
 
-#title {
+.grid > .title {
     font-size: 14px;
     line-height: 24px;
     color: rgba(0,0,0,0.54);
