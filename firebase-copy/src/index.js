@@ -5,6 +5,8 @@ import './css/main.css';
 import './css/materials.css'
 import './css/icons.css'
 
+// Content
+
 function Title(props) {
     return (
         <div className="title">{props.text}</div>
@@ -72,7 +74,71 @@ function ProjectsGrid(props) {
     );
 }
 
+function FirebaseContent(props) {
+    return (
+        <div id="content" className="features overview">
+            <ProjectsGrid />
+        </div>
+    );
+}
+
+// Top Navigation Bar
+function RightNav(props) {
+    return (
+        <ul className="right">
+            <li className="medium screen only">
+                <div className="view">
+                    <i className="material-icons left">remove_red_eye</i>
+                    View only
+                        </div>
+            </li>
+            <li className="medium screen only">
+                <a className="goToDocs">Go to docs</a>
+            </li>
+            <li>
+                <div className="btn-floating btn-flat transparent waves-light waves-light button">
+                    <i className="material-icons">more_vert</i>
+                </div>
+            </li>
+            <li>
+                <div className="profile-wrapper">
+                    <div className="btn-floating btn-flat transparent waves-effect waves-light waves-circle profile button">
+                        <img src="img/profile.svg" alt="profile photo" />
+                    </div>
+                </div>
+            </li>
+        </ul>
+    );
+}
+
+function TopNavigation(props) {
+    return (
+        <div className="navbar-fixed menu">
+            <nav>
+                <div class="nav-wrapper">
+                    <img src="img/logo.png" alt="logo" className="logo-image big screen only" />
+                    <img src="img/logotype.svg" alt="logo type" className="logo-type medium screen only" />
+                    <RightNav />
+                </div>
+            </nav>
+        </div>
+    );
+}
+
+// Side Navigation Bar
+
+
+// The whole nine yards :D
+function Firebase() {
+    return (
+        <div>
+            <TopNavigation />
+            <FirebaseContent />
+        </div>
+    );
+}
+
 ReactDOM.render(
-    <ProjectsGrid />,
-    document.getElementById('content')
+    <Firebase />,
+    document.body
 );
